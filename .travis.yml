@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - 14
+  - 12
+  - 10
+
+install:
+  - npm install
+
+script:
+  - npm run test
+
+notifications:
+  email: false
+
+branches:
+  only:
+    - main
